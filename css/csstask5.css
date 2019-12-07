@@ -1,0 +1,56 @@
+
+
+
+#task5Button{
+    position: absolute;
+    right: 12%;
+    top: 75%;
+}
+
+#task5Main{
+    display: none;
+    max-width: 85%;
+    max-height: 90%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 6%;
+}
+
+
+#task5Page2{
+    display: none;
+
+    
+}
+
+
+#tassk5Tip{
+    display: none;
+}
+
+textarea{
+    padding: 2%;
+    border-radius: 2%;
+    display: block;
+    font-size: 2.6em;
+    margin: 20% auto;
+}
+.otherComen {
+    height: 95%;
+    overflow: scroll;
+    width: 100%;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.otherComen p{
+    color:rgb(92, 78, 69);
+    background-color: rgb(217, 209, 197);
+    border-radius: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    overflow: visible;
+}
+#task5Page2 button{
+    background-color: rgb(105, 90, 79);
+}

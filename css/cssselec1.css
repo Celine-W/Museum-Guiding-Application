@@ -1,0 +1,25 @@
+
+#task2Button{
+    position: absolute;
+    left: 12%;
+    top: 40%;
+}
+
+#task2Main{
+    display: none;
+    max-width: 85%;
+    max-height: 90%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 6%;
+}
+
+#task2Answer{
+    margin-left: 13%;
+    border-radius: 8px;
+
+}
+
+#tassk2Tip{
+    display: none;
+}

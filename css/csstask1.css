@@ -1,0 +1,32 @@
+
+
+
+#task1Button{
+    position: absolute;
+    right: 12%;
+    top: 14%;
+}
+
+#task1Main{
+    display: none;
+    max-width: 85%;
+    max-height: 90%;
+    padding-left: 7.5%;
+    padding-right: 6%;
+    padding-top: 6%;
+}
+
+
+#task1Page2{
+    display: none;
+}
+
+#task1Answer , #task1Answer2{
+    margin-left: 15%;
+
+
+}
+
+#tassk1Tip{
+    display: none;
+}

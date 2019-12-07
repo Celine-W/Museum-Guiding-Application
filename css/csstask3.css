@@ -1,0 +1,109 @@
+#task3Button{
+    position: absolute;
+    right: 12%;
+    top: 40%;
+}
+
+#task3Main{
+    display: none;
+    max-width: 85%;
+    max-height: 90%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 6%;
+}
+
+#task3Page1{
+    display: none;
+}
+
+
+#task3Answer{
+    margin-left: 15%;
+    margin-top: 30%;
+
+}
+
+#tassk3Tip{
+    display: none;
+}
+
+#t3dataContent{
+    
+    width: 100%;
+    height: 90%;
+}
+
+#t3dataContent{
+    padding-top: 10%;
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+
+}
+#record2{
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    
+    
+}
+
+
+.record {
+	display: block;
+	width: 40%;
+	padding: 1em;
+	background-color: white;
+	box-shadow: rgba(0,0,0,0.25) 0 5px 5px;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+.record.record--template {
+	display: none;
+}
+
+.record .record-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.record .year {
+    display: block;
+	font-size: 1.7em;
+	font-weight: bold;
+	position: absolute;
+	right: 8%;
+	top: 0;
+	margin: 2%;
+	color: gray;
+}
+
+.record > h2{
+    font-size: 1.5em;
+    width: 95%;
+}
+
+.record img {
+	max-width: 150px;
+	max-height: 150px;
+	margin-top: 1em;
+}
+
+.record .description {
+	font-size: 1.4em;
+}
+
+.record .checkButton{
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+
+

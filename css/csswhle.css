@@ -1,0 +1,224 @@
+body{
+    color: rgb(217,209,197);
+    background-color: rgb(105, 90, 79);
+}
+h1{
+    font-family: 'Cinzel Decorative', cursive;
+}
+p{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    color:rgb(217,209,197);
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bolder;
+}
+
+
+
+.task{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius:0.5%; 
+}
+
+.back{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: row wrap;
+    background-image: url(../img/puzzle.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+#lu , #ru , #lm , #rm , #ld , #rd{
+    height: 32.5%;
+    width: 48%;
+    padding: 0.416% 0.5%;
+    
+}
+.back img{
+    width: 100%;
+    height: 100%;
+}
+
+/* all tasks*/
+.main{
+    width: 80%;
+    height: 97%;
+    position: absolute;
+    top: 1.5%;
+    left: 3%;
+    border-radius:1%; 
+    background-color: rgb(105, 90, 79);
+    z-index: 1;
+}
+
+.main h1 {
+    font-size: 3em;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.main p{
+    margin-top: 1.2%;
+    max-width: 90%;
+    font-size: 1.95em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.main button{
+    background-color: rgb(217,209,197);
+    color: rgb(105, 90, 79);
+}
+.main > article button{
+    font-size: 1.8em;
+    padding: 1em 1em;
+    outline: none;
+    box-shadow: 0.2em 0.7em 0.4em -0.3em rgba(63, 44, 30, 0.8);
+    border-radius: 225px 15px 225px 15px/15px 225px 15px 225px;
+    border: dotted 2px;
+    background-color: rgba(217,209,197,0.1);
+    color: rgb(217,209,197);
+    border-color: rgb(217,209,197);
+}
+
+.taskButton{
+    background-color: rgba(32, 31, 30, 0.315); 
+    border: none;
+    padding: 20px 40px;
+    border-radius: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    outline: none;
+    width: 220px;
+    height: 90px;
+    font-size: 30px;
+    color:black;
+}
+
+.taskButton:hover{
+    background-color: rgba(134, 132, 128, 0.5);
+    color:rgb(217,209,197);;
+}
+
+.taskButton:active{
+    background-color:rgba(134, 132, 128, 0.5);
+    color:rgb(217,209,197);
+    transform: translateY(5px);
+}
+
+.closeTask{
+    border: none;
+    color:rgb(217,209,197) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    font-size: 3em;
+}
+.closeTip{
+    border: none;
+    color:rgb(105, 90, 79) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    font-size: 3em;
+}
+
+.nextPage,.submit , .tipGoAhead{
+    position: absolute;
+    right: 8%;
+    top: 85%;
+    font-size: 2.3em;
+}
+
+.previewPage ,.tipTryAgain {
+    position: absolute;
+    left: 8%;
+    top: 85%;
+    font-size: 2.3em;
+}
+
+.nextPage,.submit , .tipGoAhead, .previewPage ,.tipTryAgain{
+    font-size: 1.8em;
+    padding: 1em 1em;
+    outline: none;
+    box-shadow: 0.2em 0.7em 0.4em -0.3em rgba(63, 44, 30, 0.8);
+    border-radius: 225px 15px 225px 15px/15px 225px 15px 225px;
+    border: dotted 2px;
+    background-color: rgba(217,209,197,0.1);
+}
+
+article > h1 , h2, p {
+    font-size: 2.5em;
+    width: 85%;
+    margin-top: 7%;
+}
+
+
+.inputForm,select{
+    padding: 1.2% 2%;
+    font-size: 2.3em;
+    width: 70%;
+    border-radius: 8px; 
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+option{
+    font-size: 1em;
+    width: 70%;
+}
+
+input[type=number]:focus{
+    border-color: rgb(105, 90, 79, .6);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(105, 90, 79, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(105, 90, 79, .6);
+}
+
+.tip{
+    position: absolute;
+    left: 17.5%;
+    top: 30%;
+    width: 65%;
+    height: 38%;
+    background-color: rgb(217, 209, 197);
+    color:rgb(105, 90, 79);
+    border-radius:1%;
+    z-index: 1;
+
+}
+.tip > h1{
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 18%;
+    font-size: 2.2em;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.goHome {
+    left: 3%;
+    top: 2%;
+    z-index: 2;
+}
+
+
+
+
+
+

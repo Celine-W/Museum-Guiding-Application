@@ -1,0 +1,510 @@
+/*
+body{
+    background-color: rgb(105, 90, 79);
+    font-size: 14px;
+    font-family: 'IBM Plex Serif', serif;
+    color:rgb(217,209,197);
+    line-height: 2.8em;
+}
+*/
+
+a:link , a:active , a:hover , a:visited{
+    text-decoration: none;
+    color:rgb(217,209,197);
+}
+
+
+/* button menu for changing pages */
+#tour  .changepage{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 2%;
+    width: 85%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.previous, .next, #start-task1, .next-task, .t1-button {
+    font-size: 1.8em;
+    padding: 1em 1em;
+    outline: none;
+    box-shadow: 0.2em 0.7em 0.4em -0.3em rgba(63, 44, 30, 0.8);
+    border-radius: 225px 15px 225px 15px/15px 225px 15px 225px;
+    border: dotted 2px;
+    background-color: rgba(217,209,197,0.1);
+    -webkit-transition-duration: 5s; /* Safari */
+    -webkit-transition-delay: 2s;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+
+/* animation for buttons */
+
+.previous:hover, .next:hover, .go-back-home:hover, #opt-collection:hover, #opt-tour:hover,.next-task:hover,.t1-button:hover {
+    animation-name: rotate-button;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+
+/* homapage */
+#homepage {
+    background-image: url(../img/homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage h1 {
+    font-size: 4.3em;
+    align-self: center;
+    padding-top: 75%;
+    line-height: 5%;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#homepage p {
+    align-self:center;
+    margin-top: 1%;
+	font-size: 2em;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+
+#homepage .changepage {
+    display: flex;
+    align-self: center;
+}
+#homepage > .changepage > .next{
+    color: rgb(105, 90, 79);
+    background: rgb(217,209,197);
+}
+#homepage button{
+    border: none;
+    font-size: 1.8em;
+    margin: 1em;
+    margin-top: 19%;
+    margin-bottom: 30%;
+    width: 7em;
+    background-color: transparent;
+    padding: none;
+    box-shadow: none;
+    border-radius: 5%;
+}
+
+#tour , .goHome{
+    font-size: 14px;
+    font-family: 'IBM Plex Serif', serif;
+    line-height: 2.8em;
+}
+.goHome{
+    background-color:  rgba(150, 108, 79, 0);
+}
+#tour {
+    background-color: rgb(105, 90, 79);
+    color:rgb(217,209,197);
+}
+
+/* introduction page */
+
+#welcome-intro {
+    background-color: rgb(105, 90, 79);
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-intro h1 {
+    font-size: 2.4em;
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 90%;
+    font-family: 'IBM Plex Serif', serif;
+    
+}
+
+
+#opt-collection, #opt-tour {
+    font-size: 1.8em;
+    background-color:rgb(217,209,197);
+    color:  rgb(105, 90, 79);
+    width: 90%;
+    height: 5%;
+    margin: 1%;
+    border-radius: 7px;
+}
+
+/* view collection page */
+
+#view-collection {
+    height: 80%;
+    width: 100%;
+    display: none;
+    margin-top: 10%;
+
+}
+
+#dataContent{
+    width: 100%;
+    height: 100%;
+    padding-top:5%; 
+    overflow: scroll;
+
+}
+#record{
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+
+.record {
+	display: block;
+	width: 80%;
+    padding: 2em;
+    color:rgb(105, 90, 79);
+	background-color: white;
+	box-shadow: rgba(0,0,0,0.25) 0 5px 5px;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+.record.record-template {
+	display: none;
+}
+
+.record .record-content {
+	display: flex;
+	align-items: flex-start;
+}
+
+.record .year {
+	font-size: 0.8em;
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 1% -2%;
+	color: gray;
+}
+
+.record img {
+	max-width: 150px;
+	max-height: 150px;
+	margin-top: 1em;
+}
+
+.record .description {
+	padding-left: 1.5em;
+}
+
+
+
+/* story pages */
+#tour-intro {
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+#tour-intro h1 {
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 0.8em;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 20%;
+    border-bottom: dashed rgb(217,209,197);
+}
+
+#tour-intro p {
+	font-size: 2.2em;
+    margin-bottom: 5%;
+    margin-top: 0.1%;
+}
+
+#tour-intro .changepage{
+    justify-content: center;
+}
+
+#tour-intro button {    
+    padding: 1em 1em;
+    margin: 3em 3em;
+    outline: none;
+    box-shadow: 0.2em 0.7em 0.4em -0.3em rgba(63, 44, 30, 0.8);
+    border-radius: 225px 15px 225px 15px/15px 225px 15px 225px;
+    border: dotted 2px;
+    background-color: rgba(217,209,197,0.1);
+}
+
+/* general setting for all story pages */
+
+.dialogue {
+    background-color: rgb(105, 90, 79);
+    height: 25%;
+    width:95%;
+    z-index: 1;
+    opacity: 0.85;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 2.5%;   
+}
+
+
+#tour-story-1, #tour-story-2, #tour-story-3, #tour-story-4, #newsPaper{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tour-story-1 p, #tour-story-2 p, #tour-story-3 p, #tour-story-4 p{
+    font-size: 2.2em;
+    max-width: 90%;
+    text-align: left;
+    margin-top: 2.5%;
+    
+}
+
+
+#tour-story-1 {
+    background-image: url(../img/story-1.jpg);
+}
+
+#tour-story-2 {
+    background-image: url(../img/story-2.jpg);
+}
+
+#tour-story-3 {
+    background-image:url(../img/story-3.jpg);
+}
+
+#tour-story-4 {
+    background-image: url(../img/emptyPaper.jpg);
+}
+
+
+.goHome{
+    position: absolute;
+    left: 2%;
+    top:2% ;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 50px;
+}
+
+
+/*task0*/
+#task0Main{
+    width: 95%;
+}
+
+#task0Page1 {
+    max-width: 85%;
+    max-height: 90%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 6%;
+}
+
+#task0{
+    display: none;
+}
+
+#tassk0Tip{
+    display: none;
+}
+#tassk0Tip h1{
+    font-size: 2em ;
+    color:  rgb(77, 67, 60);
+    font-family: 'IBM Plex Serif', serif;
+    margin-top: 10%;
+}
+
+/* all tasks*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+animation of the nevigation bar 
+*/
+#main-menu #nav {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30% 0 10% 0;
+}
+#main-menu #nav li{
+    padding: 20%;
+}
+
+#main-menu button{
+    display: block;
+    z-index: 1;
+}
+.small-menu {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    padding: 30px;
+    transform: translateX(-370px);
+    transition: transform .7s;
+    background: rgba(136, 112, 99, 0.88);
+    z-index: 1;
+    
+}
+  
+.small-menu.is-opened {
+    transform: translateX(0px);
+    
+}
+  
+.small-menu #nav {
+    opacity: 0;
+    transition: opacity .4s;
+}
+  
+.small-menu.is-opened #nav {
+    opacity: 1;
+    transition-delay: .6s;
+}
+  
+
+  
+.menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+}
+.menu-button.is-opened{
+    display: none;
+}
+
+.menu-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    
+    width: 20px;
+    padding: 20px;
+    
+
+}
+  
+.menu-open {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0 auto;
+    width: 28px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1.2em;
+}
+
+
+
+
+
+
+
+/* animation for rotate bottom buttons */
+@keyframes rotate-button {
+    0% {transform: rotateX(0deg)}
+    50% {transform: rotateX(90deg)}
+    100% {transform: rotateX(0deg)}
+}
+

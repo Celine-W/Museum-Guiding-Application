@@ -1,0 +1,95 @@
+
+.finalOutPut{
+    display: none;
+    height: 95%;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    background-image: url(../img/emptyPaper.jpg);
+    background-size: cover;
+}
+
+#inforSh{
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 80%; 
+}
+
+
+.inforSh {
+	display: block;
+    width: 90%;
+    height: 75%;
+    padding: 1em;
+    margin-top: 20%;
+    color: rgb(49, 42, 36);
+    font-size: 0.8em;
+	margin-bottom: 2%;
+	position: relative;
+}
+
+#inforShContent{
+    height: 100%;
+    display: none;
+}
+
+
+#noinforShContent{
+    display: none;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    height:60%;
+    color: black;
+    margin-left: 8%;
+    margin-top: 10%;
+    
+}
+
+.inforSh.inforSh-template {
+    display: none;
+    
+}
+
+.inforSh .inforSh-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.inforSh img {
+    width: 40%;
+    margin: 0% 5%;
+}
+
+#soldierInfor{
+    width: 55%;
+    
+}
+
+#soldierInfor h2{
+    width: 90%;
+}
+
+#soldierInfor h2:nth-child(even){
+    font-size: 1.8em;
+    font-family: 'IBM Plex Serif', serif;
+}
+#soldierInfor h2:nth-child(odd){
+    text-decoration: underline;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+
+#inforSheet .changepage .next{
+    position: absolute;
+    right: 8%;
+    top: 85%;
+    background-color: rgb(105, 90, 79);
+}

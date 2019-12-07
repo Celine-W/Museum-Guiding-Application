@@ -1,0 +1,79 @@
+.story{
+    height: 100%;
+    width: 100%;
+    
+    display: none;
+    
+}
+
+
+#newsPaper{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/find-mem.jpg);
+    background-size: cover;
+}
+
+#findArmy{
+    display: none;
+    height: 100%;
+    width: 100%;
+    
+    color: blanchedalmond;
+}
+
+.findArmy-start{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.remember{
+    margin-top: 30%;
+    margin-left: 20%;
+    font-size: 1.5em;
+}
+
+.findArmy-1 , .findArmy-2 , .findArmy-3{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.findArmy-1{
+    background-image: url(../img/afterArmy1.jpg);
+}
+
+.findArmy-2{
+    background-image: url(../img/afterArmy2.jpg);
+}
+
+.findArmy-3{
+    background-image: url(../img/afterArmy4.jpg);
+}
+
+#newsPaper .changepage, #findArmy .changepage{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 2%;
+    width: 85%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+
+#newsPaper .dialogue, #findArmy .dialogue{
+    margin-left: 2%;
+}
+
+#newsPaper p, #findArmy p{
+    font-size: 1.8em;
+    max-width: 90%;
+    text-align: left;
+    margin-top: 2.5%;
+}

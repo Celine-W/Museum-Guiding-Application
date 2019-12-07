@@ -1,0 +1,426 @@
+<!DOCTYPE <!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Demo</title>
+        <meta name="description" content="MVP">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/csstour.css">
+        <link rel="stylesheet" href="css/csswhle.css">
+        <link rel="stylesheet" href="css/csstask1.css">
+        <link rel="stylesheet" href="css/cssselec1.css">
+        <link rel="stylesheet" href="css/csstask3.css">
+        <link rel="stylesheet" href="css/cssselect2.css">
+        <link rel="stylesheet" href="css/csstask5.css">
+        <link rel="stylesheet" href="css/inforsheet.css">
+        <link rel="stylesheet" href="css/newsPaper.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|IBM+Plex+Serif&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+
+        <button class="goHome" onclick="javascript:goHome()"> <i class="fa fa-home"></i></button>
+        <section class="beginning"> 
+            <section id="homepage">
+                <h1>The Memory of War</h1>
+                <p>World War One Exhibition</p>
+                <section class="changepage">
+                    <button class = "next">Explore</button>
+                </section>
+            </section>
+
+
+            <section id="welcome-intro">
+                <h1>Welcome to the World War One Exhibition! Use this application, you will be able to</h1>
+                <button id="opt-collection">View data collection</button>
+                <button id="opt-tour">Start an adventure tour in the museum</button>
+            </section>
+
+            <section id="view-collection">
+                
+                <section id="dataContent">
+                    <section id="record"></section>
+        
+                    <article class="record record-template">
+                        <h2>Record Title</h2>
+                        <p class="year">Record Year</p>
+                        <section class="record-content">
+                            <a href="#">
+                            <img src="img/story-2.jpg" alt="record Image" class="strip">
+                            </a>
+                        <p class="description">Description</p>
+                        </section>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <section id="tour">
+            <section id="tour-intro">
+                <h1>Tour guide</h1>
+                <p>In the following adventure, you will play a role-play game which will guide you to explore the First World War in this museum. </p>
+                <p>You will start with a short story which will introduce you to the background of the game, please read the story carefully. </p>
+                <p>As a soldier, you will need to complete different tasks. These tasks will guide you to find out more about the museum and the First World War.</p>
+                <p>After completion of all tasks, you will get a small prize as your award as a soldier.</p>
+                <section class="changepage">
+                    <button class = "next">Start my adventure</button>
+                </section>
+            </section>
+
+            <section id="tour-story-1">
+                <section class = "dialogue">
+                    <p>You open your eyes. You can't remember anything at all. "Where am I...who am I?" You have lost your memory.</p>
+                </section>
+                <section class="changepage">
+                    <button class = "previous">Previous</button>
+                    <button class = "next">Next</button>
+                </section>
+            </section>
+
+
+            <section id="tour-story-3">
+                <section class = "dialogue">
+                    <p>A man walks in, he tells you that you were found somewhere near the town, and they only know that you are a soldier because you were wearing soldier's uniform.</p>
+                </section>
+                <section class="changepage">
+                    <button class = "previous">Previous</button>
+                    <button class = "next">Next</button>
+                </section>
+            </section>
+
+            <section id="tour-story-4">
+                <section class = "dialogue">
+                    <p>He gives you a burnt piece of soldier idenfitication. You can only see an address on it. <br/> Now you need to find your missing memory.</p>
+                </section>
+                <section class="changepage">
+                    <button class = "previous">Previous</button>
+                    <button id = "start-task1">Start</button>
+                </section>
+            </section>
+        </section>
+
+
+        <section class="finalOutPut" id="inforSheet">
+            <article id="inforShContent">
+                <section id="inforSh"></section>
+                <article class="inforSh inforSh-template">
+                    <section class="inforSh-content">
+                        <img src="img/story-2.jpg" alt="record Image" class="strip">
+                        <section id="soldierInfor">
+                            <h2>Name</h2>
+                            <h2 id="name">soldiername</h2>
+                            <h2>Army</h2>
+                            <h2 id="army">soldierarmy</h2>
+                            
+                        </section>
+                    
+                    </section>
+                </article>
+                
+            </article>
+            <article id="noinforShContent">
+                <h1>Sorry...</h1>
+                <p>Sorry, you did not manage to collect all the missing information. </p>
+                <p>Maybe next time you come here you can collect everything!</p>
+            </article>
+            <section class="changepage">
+                <button class = "next" onclick="javascript:goHome()">Restart</button>
+            </section>
+
+        </section>
+
+
+        <section class="story" id="findNewspaper">
+            <section id="newsPaper">
+                <section class = "dialogue">
+                    <p>You pick up a piece of newspaper, there is a photograph on the cover page.
+                    It is a photo of the <span class="newsPyear"></span> soldier departure. You find yourself in the photo.
+                    <span class="newsPyear"></span> is the year you joined the first world war.</p>
+                </section>
+                <section class="changepage">
+                    <button class = "next">Continue</button>
+                </section>
+            </section>
+
+            <section id="findArmy">
+                <section class="findArmy-start">
+                    <section class="remember">
+                        <p>Something flashes in your memory...</p>
+                        <p>Your memory recorvers!</p>
+                    </section>
+                    <section class="changepage">
+                        <button class = "next">Continue</button>
+                    </section>
+                </section>
+
+                <section class="findArmy-1">
+                    <section class = "dialogue">
+                        <p>You joined the <span class="story-army"></span> in <span class="newsPyear"></span>.
+                        You didn't know a lot about the war, you only knew that you were going to fight for the country, for peace and for the honour of a soldier.</p>
+                    </section>
+                    <section class="changepage">
+                        <button class = "next">Continue</button>
+                    </section>
+                </section>
+
+                <section class="findArmy-2">
+                    <section class = "dialogue">
+                        <p>Michael was your best mate in the <span class="story-army"></span>. You joined the army together in <span class="newsPyear"></span>. Your team was attacked heavily by fierce gunfire when landing at the destination.  </p>
+                    </section>
+                    <section class="changepage">
+                        <button class = "next">Continue</button>
+                    </section>
+                </section>
+
+                <section class="findArmy-3">
+                    <section class = "dialogue">
+                        <p>It has been a really long time since you left Australia in <span class="newsPyear"></span>. Your country won the war. Lots of people from your team, the <span class="story-army"></span>, had sacrificed their lives for the victory. </p>
+                    </section>
+                    <section class="changepage">
+                        <button class = "next">Continue</button>
+                    </section>
+                </section>
+  
+            </section>
+        </section>
+
+
+
+
+        <section class="task" id="task0">
+            <!-- <button class="taskButton" id="task4Button">Task </button>-->
+             
+            <section class="back">
+                <section id="lu"></section>
+                <section id="ru"></section>
+                <section id="lm"></section>
+                <section id="rm"></section>
+                <section id="ld"></section>
+                <section id="rd"></section>
+            </section>
+
+
+
+            <section class="main" id="task0Main">
+ 
+                 <article id="task0Page1">
+                     <h1>Your first task</h1>
+                     <p>There is a very big information board in this museum, you can see it once you enter the museum.</p>
+                     <p>Now, please enter the museum and find the information board.</p>
+                     
+                     <button class="nextPage">I found it!</button>
+                     
+                 </article>
+                 
+ 
+                 <section class="tip" id="tassk0Tip">
+                     <h1>Congratulation! You have just collected the first missing piece of the broken information sheet. Go and complete all tasks to collect all the missing information and find your memory!</h1>
+                     <button class="tipGoAhead">Continue</button>
+                     
+                 </section>
+ 
+                 <button class="closeTask">✕</button>
+ 
+                 
+                 
+         
+ 
+            </section>
+
+
+
+            <!-- task1 -->
+            <button class="taskButton" id="task1Button">Piece 2</button>
+            <section class="main" id="task1Main">
+                <section class="tip" id="tassk1Tip">
+                    <button class="closeTip">✕</button>
+                    <h1></h1>
+                    <button class="tipTryAgain">Try Again</button>
+                    <button class="tipGoAhead">Continue</button>
+                </section>
+                <button class="closeTask">✕</button>
+                <article id="task1Page1">
+                    <h1>Second missing piece</h1>
+                    <p>As a soldier, you have served in the First World War. The information board in front of you gives the basic information of the war you have served for. Please read the information carefully and answer the following questions.</p>
+                    <button class="nextPage">I am ready</button>
+
+                </article>
+                <article id="task1Page2">
+                    <h1>Find the answers</h1>
+                    <p>The starting point of Autralia's involvement in WW1 is very important for your memory. When is the time of Australia's first significant action in the First World War?</p>
+                    <!--<input type="text" class="inputForm" id="task1Answer">-->
+                    <select class="inputForm" id="task1Answer">
+                        <option value="1924">1924</option>
+                        <option value="1915">1915</option>
+                        <option value="1937">1937</option>
+                        <option value="1914">1914</option>
+                    </select>
+                    <p>Which country did the ANMEF take possession of?</p>
+                    <!--<input type="text" class="inputForm" id="task1Answer2">-->
+                    <select class="inputForm" id="task1Answer2">
+                        <option value="german">German</option>
+                        <option value="america">America</option>
+                        <option value="australia">Australia</option>
+                        <option value="japan">Japan</option>
+                    </select>
+                    <button class="submit" id="task1Submit">Submit</button>
+                    <button class="previewPage">Previous</button>
+
+                    
+    
+                </article>
+            </section>
+
+            <!-- task2  selection1 -->
+            <button class="taskButton" id="task2Button">Piece 3</button>
+            
+            <section class="main" id="task2Main">
+                <section class="tip" id="tassk2Tip">
+                    <button class="closeTip">✕</button>
+                    <h1></h1>
+                    <button class="tipTryAgain">Try Again</button>
+                    <button class="tipGoAhead">Continue</button>
+                </section>
+
+                <button class="closeTask">✕</button>
+
+                <article id="task2Page1">
+                    <h1>Third missing piece</h1>
+                    <p>Now please proceed to the main exhibition hall. </p>
+                    <p>In the main exhibition hall, you will be able to see the collections of items from World War One. Take your time to browse the museum exhibits. </p>
+                    <p>Does any of the exhibits awaken your memory? </p>
+                    <p>Each exhibit has a unique code. Please find one that you feel the most related to and enter it's code:</p>
+                    <input type="number" class="inputForm" id="task2Answer">
+                    <button class="submit" id="task2Submit">Submit</button>
+                </article>
+            </section>
+
+
+
+            <!-- task3 -->
+            <button class="taskButton" id="task3Button">Piece 4</button>
+            
+            <section class="main" id="task3Main">
+
+                <article id="task3Page1">
+                    <h1>Fourth missing piece</h1>
+                    <p>You are getting very close to your memory.</p>
+                    <p>Your next task is to identify the information that are related to you.</p>
+                    <p>You will be given a collection of data records of newspapers and photos, find the ones that are in the same year as the year you joined the battle.</p>
+                    <button class="nextPage">Ready</button>
+                    
+                </article>
+                <section id="t3dataContent">
+                    <section id="record2"></section>
+                    
+                    <section class="record record--template">
+                        <h2>Record Title</h2>
+                        <p class="year">Record Year</p>
+                        <section class="record-content">
+                            
+                            <img alt="record Image" class="strip">
+                            
+                            <p class="description">Description</p>
+                        </section>
+                        
+                    </section>
+                </section>
+
+                <section class="tip" id="tassk3Tip">
+                    <h1></h1>
+                </section>
+
+                <button class="closeTask">✕</button>
+            </section>
+
+
+            <!-- task4 selection2-->
+
+            <button class="taskButton" id="task4Button">Piece 5</button>
+            
+            <section class="main" id="task4Main">
+
+                <article id="task4Page1">
+                    <h1>Set off! Choose your army!</h1>
+                    <p>On the next page, you will be given a list of armies. Choose one and set off!</p>
+                    <button class="nextPage">Continue</button>
+                    
+                </article>
+                <article id="task4Page2">
+           
+                </article>
+
+                <section class="tip" id="tassk4Tip">
+                    <h1></h1>
+                    
+                </section>
+
+                <button class="closeTask">✕</button>
+
+            </section>
+
+
+            <!-- task5-->
+
+            <button class="taskButton" id="task5Button">Piece 6</button>
+            
+            <section class="main" id="task5Main">
+
+                <article id="task5Page1">
+                    <h1>Final piece of missing information</h1>
+                    <p>The next section of the museum is a memorial hall. You can find the names and stories of the soldiers who have sacrificed their lives in the First World War.</p>
+                    <p>Some of them were your friends, some of them were your captains, some of them you have never met before, but all of you have a same name: hero of the Great War. </p>
+                    <p>On the next page, you will read some museum visitors' comments. For your last task before you can collect your information sheet, you will need to leave your own comment.</p>
+                    <button class="nextPage">View comments</button>
+                    
+                </article>
+
+                <article id="task5Page2">
+                    <section class="otherComen">
+                    </section>
+                    <button class="nextPage">Write my comment</button>
+                    <button class="previewPage">Previous</button>
+                </article>
+
+                <article id="task5Page3">
+                    <h1>Write comments</h1>
+                    <p>Please leave your words to the War, to your friends, to your family, or your feeling in this museum.</p>
+                    <textarea  id="task5ComInput" cols="40" rows="10"></textarea>
+                    <button class="submit" id="task5Submit">Finish</button>
+                    
+                </article>
+
+                <section class="tip" id="tassk5Tip">
+                    <h1>Thanks for your comment. Click to continue.</h1>
+                    <button class="tipGoAhead">Continue</button>
+                    <button class="closeTip">✕</button>
+                </section>
+
+                <button class="closeTask">✕</button>
+
+            </section>
+
+
+            
+
+        
+        </section>
+
+        
+
+
+
+
+
+
+
+        <script src="js/jquery-3.4.1.min.js" ></script>
+        <script src="js/js.js" ></script>
+    </body>
+</html>
+
+
